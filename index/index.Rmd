@@ -1,0 +1,346 @@
+---
+title: 'CHAMADA FAPEMIG Nº 005/2023 </br> ORGANIZAÇÃO DE EVENTOS DE CARÁTER TÉCNICO E CIENTÍFICO'
+subtitle: 'Principais Informações'
+author: '*Autor*: Victor Valerio'
+date: '*Última Atualização*: `r format(Sys.Date(), "%d-%m-%Y")`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r configuracoes_chunk, include = FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  out.width = '100%',
+  cache = TRUE,
+  echo = TRUE, 
+  error = FALSE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r configuracoes_tema, include = FALSE}
+library(xaringanthemer)
+style_mono_light(base_color = '#013A71',
+                 header_font_google = google_font('Poppins'),
+                 text_font_google = google_font("Poppins"),
+                 code_font_google = google_font("Fira Mono"),
+                 text_font_size = '1.5rem')
+```
+
+## APRESENTAÇÃO
+  ---
+- [**QUAL O OBJETIVO DO EDITAL?**](#capa1)
+
+- [**QUAIS OS ITENS FINANCIÁVEIS?**](#capa2)
+
+- [**QUAL VALOR MÁXIMO POR PROJETO?**](#capa3)
+
+- [**QUAL O PRAZO PARA SUBMISSÃO?**](#capa4)
+
+- [**QUAIS OS ELEMENTOS DO PROJETO?**](#capa5)
+
+- [**REFERÊNCIA**](#capa6)
+
+---
+class: inverse, center, middle
+name: capa1
+
+  ---
+## QUAL OBJETIVO DO EDITAL?
+  ---
+
+---
+<div style = "text-align: justify">
+## QUAL O OBJETIVO DO EDITAL? 
+  ---
+
+- De acordo com o **Art. 1**, tem-se a presente chamada possui o seguinte 
+objetivo:
+
+> "*Incentivar a divulgação de resultados de pesquisas científicas, tecnológicas e 
+de inovação e contribuir para a promoção do intercâmbio científico e tecnológico 
+por meio do apoio à organização de eventos científico-tecnológicos no Estado de 
+Minas Gerais*"
+
+---
+class: inverse, center, middle
+name: capa2
+
+  ---
+## QUAIS OS ITENS FINANCIÁVEIS?
+  ---
+
+---
+<div style = "text-align: justify">
+## QUAIS OS ITENS FINANCIÁVEIS?
+  ---
+  
+- De acordo com o **Art. 7**, tem-se **12** diferentes itens financiáveis (cada 
+item selecionado deve ser compatível com o objetivo da chamada e estar 
+devidamente justificado).
+
+1) *Diárias, exclusivamente para conferencistas convidados e membros de mesa 
+redonda, conforme valores da FAPEMIG e somente para dias de realização do 
+evento;*
+
+2) *Passagens aéreas ou terrestres, exclusivamente para conferencistas convidados e
+membros da mesa redonda;*
+  
+---
+<div style = "text-align: justify">
+## QUAIS OS ITENS FINANCIÁVEIS?
+  ---
+
+3) *Serviços gráficos de impressão ou de computação, incluindo vídeos e 
+aplicativos e encadernação de materiais relacionados ao evento (por exemplo, 
+anais, folder com programação e relação de trabalhos a serem apresentados);*
+
+4) *Serviços gráficos de produção (designer gráfico) de peças relacionadas ao 
+evento (por exemplo, identidade visual, confecção de anais, banners, folders e 
+cartazes);*
+
+---
+<div style = "text-align: justify">
+## QUAIS OS ITENS FINANCIÁVEIS?
+  ---
+  
+5) *Locação de serviços técnicos e especializados destinados a tradução 
+simultânea e traduções relacionadas a itens financiáveis na chamada;*
+
+6) *Locação de serviços e equipamentos de áudio e vídeo, inclusive multimídia;*
+
+7) *serviços de produção e edição de vídeos;*
+
+8) *serviço de apoio a organização, construção do site, manutenção/suporte e
+transmissão do evento;*
+
+---
+<div style = "text-align: justify">
+## QUAIS OS ITENS FINANCIÁVEIS?
+  ---
+  
+9) *Contratação de plataforma virtual para gerenciamento de inscrições, para
+gerenciamento de submissões de trabalhos e para realização do evento online;*
+
+10) *Contratação de serviços de vídeo para gravação e transmissão de 
+apresentações ao vivo e edição para divulgação do evento;*
+
+11) *Fornecimento de dupla internet, gerador e nobreak;*
+
+12) *Contratação de Intérprete de Libras.*
+
+---
+class: inverse, center, middle
+name: capa3
+
+  ---
+## QUAL VALOR MÁXIMO POR PROJETO?
+  ---
+
+---
+<div style = "text-align: justify">
+## QUAL VALOR MÁXIMO POR PROJETO?
+  ---
+  
+- De acordo com o **Art. 3.4** o valor máximo de cada projeto varia de acordo 
+com dois itens: 
+
+  - **Abrangência**;
+  - **Porte**. 
+  
+- As definições de cada um dos itens supracitados são definidos na tabela vigente 
+da própria FAPEMIG. 
+
+---
+<div style = "text-align: justify">
+## QUAL VALOR MÁXIMO POR PROJETO?
+  ---
+
+```{r, echo = FALSE}
+valores <- data.frame(
+  abrangencia = c('Local','Regional/Estadual','Nacional','Mundial'),
+  pequeno = c('R$ 6.000', 'R$ 12.000', 'R$ 12.000', 'R$ 36.000'),
+  medio = c('R$ 12.000','R$ 18.000','R$ 24.000','R$ 60.000'),
+  intermediario = c('R$ 18.000', 'R$ 24.000', 'R$ 60.000', 'R$ 84.000'),
+  grande = c('-', 'R$ 30.000', 'R$ 120.000', 'R$ 144.000')
+)
+knitr::kable(valores,
+             escape = FALSE,
+             format = 'html',
+             align = c('c', 'c', 'c', 'c', 'c'),
+             col.names = c('Abrangência', 'Pequeno','Médio','Intermediário','Grande'),
+             caption = 'TABELA RESUMO DE VALOR MÁXIMO DE PROJETO POR CRITÉRIO DE ABRANGÊNCIA E PORTE') 
+```
+
+---
+<div style = "text-align: justify">
+## QUAL VALOR MÁXIMO POR PROJETO?
+  ---
+
+- São valores de referência para **abrangência**: 
+
+  - **Mundial**: Eventos promovidos por sociedades científicas ou tecnológicas 
+  mundiais, sediadas ou não no Brasil, que sejam realizados em diferentes países
+  a cada edição, ou Eventos promovidos por entidades de âmbito internacional, 
+  que tenham em sua Comissão Organizadora ou Comitê Científico representantes de 
+  instituições estrangeiras reconhecidas internacionalmente e público 
+  participante proveniente de instituições estrangeiras.
+
+---
+<div style = "text-align: justify">
+## QUAL VALOR MÁXIMO POR PROJETO?
+  ---
+
+- São valores de referência para **abrangência**: 
+
+  - **Nacional**: Eventos de entidades nacionais que tenham na composição de sua 
+  Comissão Organizadora e de seu Comitê Científico representantes de diferentes 
+  instituições nacionais de qualidade reconhecida, bem como 
+  palestrantes/conferencistas convidados provenientes de instituições nacionais 
+  e internacionais.
+
+---
+<div style = "text-align: justify">
+## QUAL VALOR MÁXIMO POR PROJETO?
+  ---
+
+- São valores de referência para **abrangência**: 
+
+  **Regional/Estadual**: Eventos promovidos por diferentes instituições com 
+  abrangência regional ou estadual, e que promovam a integração de diferentes 
+  programas ou pesquisadores atuando sobre o mesmo tema.
+
+---
+<div style = "text-align: justify">
+## QUAL VALOR MÁXIMO POR PROJETO?
+  ---
+
+- São valores de referência para **abrangência**:
+
+  **Local**: Eventos de menor porte e de abrangência de uma ou mais instituições 
+  da mesma localidade, organizados por pesquisadores destas localidades.
+  
+- **Provavelmente será LOCAL**.
+
+---
+<div style = "text-align: justify">
+## QUAL VALOR MÁXIMO POR PROJETO?
+  ---
+
+- São valores de referência para **porte**:
+
+  - **Pequeno**: Até 100 inscritos;
+  
+  - **Médio**: De 101 à 400 inscritos;
+  
+  - **Intermediário**: De 401 à 1000 inscritos;
+  
+  - **Grande**: Mais de 1001 inscritos. 
+  
+- **Provavelmente será INTERMEDIÁRIO**.
+  
+---
+class: inverse, center, middle
+name: capa4
+
+  ---
+## QUAL O PRAZO PARA SUBMISSÃO?
+  ---
+  
+---
+<div style = "text-align: justify">
+## QUAL O PRAZO PARA SUBMISSÃO?
+  ---
+
+- De acordo com o **Art. 4.3**, tem-se o seguinte cronograma:
+```{r, echo = FALSE}
+cronograma <- data.frame(
+  realizacao = c('Entre 01/10/23 e 31/01/24',
+                 'Entre 01/02/24 e 30/05/24',
+                 'Entre 01/06/24 e 30/09/24'),
+  submissao = c('30/05/23', 
+                '02/10/23', 
+                '31/01/24'),
+  resultado = c('28/07/23',
+                '30/01/23',
+                '27/03/24')
+)
+knitr::kable(cronograma,
+             escape = FALSE,
+             format = 'html',
+             align = c('c', 'c', 'c'),
+             col.names = c('Data de Realização do Evento', 'Prazo de Submissão da Proposta','Divulgação do Resultado')) 
+```
+
+---
+class: inverse, center, middle
+name: capa5
+
+  ---
+## QUAIS OS ELEMENTOS DO PROJETO?
+  ---
+  
+---
+<div style = "text-align: justify">
+## QUAIS OS ELEMENTOS DO PROJETO?
+  ---
+
+- De acordo com o **Art. 8**, são itens mínimos do projeto:
+
+  - **Dados básicos da Proposta** (Título, Data, Duração, Área de Conhecimento, 
+  Resumo, Palavras-Chave);
+  - **Instituições** (Executora/Proponente, Gestora/Fundação, Parceiras se Houver);
+  - **Natureza da Proposta** (Abrangência e Porte);
+  - **Detalhamento da Proposta**;
+  - **Metas** e **Local**.
+
+---
+<div style = "text-align: justify">
+## QUAIS OS ELEMENTOS DO PROJETO?
+  ---
+  
+- Há um possível impeditivo para nossa participação, de acordo com o 
+**Art. 8.2.9**:
+
+> "*Será financiada nesta Chamada somente Organização de Eventos de abrangência
+regional, nacional e internacional, devendo ser especificado no formulário 
+eletrônico, em “Natureza da Proposta”, qual a amplitude e porte do evento*".
+
+---
+<div style = "text-align: justify">
+## QUAIS OS ELEMENTOS DO PROJETO?
+  ---
+
+- Penso que não será possível o envio de diferentes coordenadores, para o mesmo 
+evento. Conforme descrito pelos **Arts. 5.1.7 e 5.1.7.1**:
+
+> "*A proposta deverá ser original. A não observância desta diretriz inabilitará 
+a proposta.*"
+
+> "*Constatado o envio de propostas idênticas, todas serão desclassificadas.*"
+  
+---
+class: inverse, center, middle
+name: capa6
+
+  ---
+## REFERÊNCIA
+  ---
+
+---
+<div style = "text-align: justify">
+## REFERÊNCIA
+  ---
+
+- [**LINK PARA CHAMADA FAPEMIG**](http://www.fapemig.br/pt/chamadas_abertas_oportunidades_fapemig/);
+
+- [**LINK PARA TABELAS VIGENTES - FAPEMIG**](http://www.fapemig.br/pt/menu-servicos/tabelas-vigentes/financiamento-de-eventos/).
